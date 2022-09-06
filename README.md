@@ -1,20 +1,17 @@
 
 # heroku-integrated-firefox-geckodriver
 
-[![Build Status](https://travis-ci.org/pyronlaboratory/heroku-integrated-firefox-geckodriver.svg?branch=master)](https://travis-ci.org/pyronlaboratory/heroku-integrated-firefox-geckodriver)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 > Now supports Heroku-20, and legacy versions Heroku-16 and Heroku-18.
 
-> Available for download at [The Heroku Elements Marketplace](https://elements.heroku.com/). Search `heroku-integrated-firefox-geckodriver` on the official Heroku Elements Marketplace to access the buildpack.
+> Available for download at [The Heroku Elements Marketplace](https://elements.heroku.com/). Search `heroku-geckodriver-firefox` on the official Heroku Elements Marketplace to access the buildpack.
 
 
-Buildpack `heroku-integrated-firefox-geckodriver` enables your application or client code - running in any high-level language such as Python, Ruby or Node.js - to access Firefox along with Geckodriver (the Selenium driver for Firefox) in a Heroku slug and enables the driver objects to perform automated operations defined in the source code.
+Buildpack `heroku-geckodriver_firefox` enables your application or client code - running in any high-level language such as Python, Ruby or Node.js - to access Firefox along with Geckodriver (the Selenium driver for Firefox) in a Heroku slug and enables the driver objects to perform automated operations defined in the source code.
 
 Version compatibility as follows:
 
 - Firefox v82.0.3
-- Geckodriver v0.28.0
+- Geckodriver v0.30.0
 
 
 # Installation:
@@ -23,10 +20,10 @@ Version compatibility as follows:
 To install and integrate the buildpack with your application running on Heroku's dyno:
 
 ```shell
-$ heroku create --buildpack https://github.com/pyronlaboratory/heroku-integrated-firefox-geckodriver
+$ heroku create --buildpack https://github.com/gzemel/heroku_geckodriver_firefox
 
 # or if your app is already created:
-$ heroku buildpacks:add https://github.com/pyronlaboratory/heroku-integrated-firefox-geckodriver
+$ heroku buildpacks:add https://github.com/gzemel/heroku_geckodriver_firefox
 
 $ git push heroku master
 ```
@@ -193,4 +190,3 @@ const  options = new  Options()
 
 Go ahead and scrape the universe. Drop a star if you like this small project!
 
-<a href="https://ko-fi.com/F1F1VEXA" target="_blank"><img src="https://prototypr-media.sfo2.digitaloceanspaces.com/wp-content/uploads/2020/09/06075602/C91A1CCC-AF29-432B-81F9-F2BA1220AFA7-1024x512-1.png" alt="Buy me a Ko-fi, will ya?!"/></a>
